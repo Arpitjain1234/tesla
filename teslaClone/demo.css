@@ -1,0 +1,28 @@
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    scroll-snap-align: start;
+}
+#one{
+    background-color:#9129e8cf;;
+}
+#two{
+    background-color:#00bcd4;;
+}
+
+#three{
+    background-color:#ff9800;
+}
+#Indian{
+    background-color:#e91e63;
+}
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+

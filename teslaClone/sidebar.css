@@ -1,0 +1,18 @@
+
+.sidebar{
+    height: 300 px;
+    width:50px;
+    background-color: cyan;
+    position: fixed;
+    right: 50%;
+    text-align: center;
+}
+
+.sideBarActive{
+    height: 300 px;
+    width:50px;
+    background-color:#eee;
+    position: fixed;
+    right: 0;
+    text-align: center;
+}   

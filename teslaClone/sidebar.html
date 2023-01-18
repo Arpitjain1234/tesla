@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+    
+    <div class="sidebar">  <br> 
+        Menu            <br>
+        Profile<br>
+        About<br>
+        Your Orders<br>
+        Notifications<br>
+        Account<br>
+        About Us<br>
+        Redeem <br>
+        <button id = "menubar" >menubar</button>
+    </div>
+<script src="sidebar.js"></script>
+</body>
+</html>
+
+function openMenuBar(){
+    document.querySelector('aside').className = 'active';
+    document.getElementById('backdrop').className = 'activeBackdrop';
+   
+
+    console.log('called inside the function');
+}
+`
+function closeMenuBar(){
+    document.querySelector('aside').className = '';
+    document.getElementById('backdrop').className = 'inactiveBackdrop';
+
+    console.log('this has been called after the cross button')
+}
+
+document.querySelector('button').onclick = e=>{
+    e.preventDefault();
+    closeMenuBar();
+}
+document.getElementById('Menu').onclick = e =>{
+    e.preventDefault();
+    openMenuBar();
